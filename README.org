@@ -1,0 +1,32 @@
+ #+TITLE: Small Utility to print Legion 7 availability
+
+ This utility scans Lenovo's website every 30 minutes and prints a notification of Legion 7 laptops as listed [[https://www.lenovo.com/us/en/c/laptops/legion-laptops/legion-7-series][here]]. This helps to check the availability of the laptop without having to visit the website.
+
+* Setup
+  This script was primarily written in Linux. However, I think it should work on Windows or Mac too, if the setup is done properly. I use selenium and google-chrome driver to scan the website. You will need to setup following tools.
+
+  - Install Chrome Driver and Specify its path in legion_notify.py CHROME_DRIVER_PATH (replace current value: /usr/bin/chromedriver) if it is different OS or installation PATH
+  - Install necessary python modules (selenium, dbus-python)
+	~ pip install selenium dbus-python~
+  - If you are unable to install dbus-python properly, you can comment (put # infront ) following lines in ~legion_notify.py~
+#+begin_src python
+  notification = Notification()
+  notification.notify('', print_txt)
+#+end_src
+  To print the text in command prompt (terminal), you can enable (remove leading #) following line in same file (~legion_notify.py~).
+#+begin_src python
+print(print_txt)
+#+end_src
+
+* Download
+  To download the code use ~git clone https://github.com/dolphinjumps/lenovo_legion7_notify.git~
+* Execute
+  - To execute the code, you need to run legion_notify.py file. I usually add it as start script. In Kde Plasma you can specify it in ~Autostart~
+  - Don't forget to make the file executable by executing following command (in Linux)
+#+begin_src bash
+$ chmod +x legion_notify.py  
+#+end_src
+* Screenshot
+  [[./Screenshot_Notification1.png]]
+
+  
