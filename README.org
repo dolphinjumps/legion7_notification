@@ -5,7 +5,7 @@
 * Setup
   This script was primarily written in Linux. However, I think it should work on Windows or Mac too, if the setup is done properly. I use selenium and google-chrome driver to scan the website. You will need to setup following tools.
 
-  - Install [[https://chromedriver.chromium.org/downloads][Chrome Driver]] and Specify its path in legion_notify.py CHROME_DRIVER_PATH (replace current value: /usr/bin/chromedriver) if it is different OS or installation PATH
+  - Install [[https://chromedriver.chromium.org/home][Chrome Driver]] and Specify its path in legion_notify.py CHROME_DRIVER_PATH (replace current value: /usr/bin/chromedriver) if it is different OS or installation PATH
   - Install necessary python modules (selenium, dbus-python)
 	~ pip install selenium dbus-python~
   - If you are unable to install dbus-python properly, you can comment (put # infront ) following lines in ~legion_notify.py~
