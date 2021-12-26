@@ -19,7 +19,7 @@ print(print_txt)
 #+end_src
 
 * Download
-  To download the code use ~git clone https://github.com/dolphinjumps/lenovo_legion7_notify.git~
+  To download the code use ~git clone https://github.com/dolphinjumps/legion7_notification.git~
 * Execute
   - To execute the code, you need to run legion_notify.py file. I usually add it as start script. In Kde Plasma you can specify it in ~Autostart~
   - Don't forget to make the file executable by executing following command (in Linux)
