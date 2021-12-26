@@ -7,7 +7,7 @@
 
   - Install [[https://chromedriver.chromium.org/home][Chrome Driver]] and Specify its path in legion_notify.py CHROME_DRIVER_PATH (replace current value: /usr/bin/chromedriver) if it is different OS or installation PATH
   - Install necessary python modules (selenium, dbus-python)
-	~ pip install selenium dbus-python~
+	~pip install selenium dbus-python~
   - If you are unable to install dbus-python properly, you can comment (put # infront ) following lines in ~legion_notify.py~
 #+begin_src python
   notification = Notification()
